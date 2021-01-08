@@ -18,9 +18,9 @@ export default function SearchPage() {
 	return (
 		<div className='searchTemplateContainer'>
 			<h1>Create new email</h1>
-			<p>Search for a gym</p>
-			<form onSubmit={onSubmit}>
-				<div style={{ width: 400 }}>
+			<p className='instructions'>Search for a gym</p>
+			<form onSubmit={onSubmit} className='form'>
+				<div className='searchBar'>
 					<ReactSearchAutocomplete
 						items={items}
 						// onSearch={handleOnSearch}
@@ -31,7 +31,7 @@ export default function SearchPage() {
 				</div>
 				<button type='submit'>Search</button>
 			</form>
-			<p>{searchValue}</p>
+			<p className='result'> {searchValue}</p>
 		</div>
 	);
 }

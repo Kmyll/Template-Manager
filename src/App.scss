@@ -3,8 +3,7 @@
 $darkGrey: #212121;
 $lightGrey: #ededed;
 $textColour: #666666;
-
-// GENERAL
+$green: #4caf4f;
 
 * {
 	box-sizing: border-box;
@@ -33,6 +32,7 @@ body {
 
 	h1 {
 		color: white;
+		font-size: 2rem;
 	}
 }
 
@@ -43,28 +43,20 @@ body {
 	h1 {
 		color: #666666;
 		margin-bottom: 3%;
+		font-size: 1.6rem;
 	}
-	p {
+	.instructions {
 		margin: 2% 0 1% 0;
 		font-style: italic;
-		font-size: 12px;
+		font-size: 16px;
 	}
-	input {
-		width: 500px;
-		height: 40px;
-		outline: none;
-		border-radius: 5px;
-		border: 1px solid $textColour;
-		padding: 1%;
-	}
-	div {
-		padding: 1%;
-	}
+
 	button {
-		height: 32px;
+		position: absolute;
+		padding: 10px 1%;
+		margin: 4px;
 		outline: none;
-		width: 80px;
-		margin-left: -8%;
+		justify-self: flex-end;
 		background-color: $textColour;
 		color: white;
 		font-weight: bold;
@@ -77,4 +69,46 @@ body {
 			transition-duration: 0.3s;
 		}
 	}
+}
+
+/// SEARCH BOX
+
+.wrapper {
+	border-radius: 5px !important;
+	font-size: 12px !important;
+	font-family: 'Lato', sans-serif !important;
+	background-color: transparent !important;
+	border: none !important;
+	&:hover,
+	&:focus-within {
+		box-shadow: none !important;
+	}
+	.evwHCa {
+		background-color: white;
+		border: 1px solid $textColour !important;
+		svg {
+			display: none;
+		}
+	}
+}
+
+.searchBar {
+	width: 400px;
+}
+.form {
+	display: flex;
+	justify-content: flex-end;
+	background-color: white !important;
+	border-radius: 5px;
+	border: 1px solid $textColour;
+	width: 400px;
+}
+
+// result
+
+.result {
+	color: $green;
+	font-size: 15px !important;
+	font-style: none !important;
+	margin-top: 2%;
 }
