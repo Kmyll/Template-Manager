@@ -5,6 +5,8 @@ $lightGrey: #ededed;
 $textColour: #666666;
 $green: #4caf4f;
 
+// GENERAL
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -104,7 +106,7 @@ body {
 	width: 400px;
 }
 
-// result
+// RESULT
 
 .result {
 	color: $green;
